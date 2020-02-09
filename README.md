@@ -8,6 +8,7 @@
 
 - [Trend Prediction API](trend-prediction.ipynb)
 - [KPI Calculation API](kpi-calculation.ipynb)
+- [Spectrum Analysis API](spectrum-analysis.ipynb)
 
 ## Siemens API Notice
 
