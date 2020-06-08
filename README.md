@@ -6,9 +6,23 @@
 
 ## Jupyter Notebooks demonstrating the use of the MindSphere Analytics APIs
 
-- [Trend Prediction API](trend-prediction.ipynb)
-- [KPI Calculation API](kpi-calculation.ipynb)
-- [Spectrum Analysis API](spectrum-analysis.ipynb)
+### Trend Prediction API
+
+The Trend Prediction API predicts future values for time series using linear and nonlinear regression models. It is a forecasting framework, that has many useful applications in the area of Process & Condition Monitoring.
+
+Example: [Trend Prediction API](trend-prediction.ipynb)
+
+### KPI Calculation API
+
+The KPI Calculation API computes Key Performance Indicators (KPIs) for an asset. It uses data sources such as sensors, control units and calendars.
+
+Example: [KPI Calculation API](kpi-calculation.ipynb)
+
+### Spectrum Analysis API
+
+Spectrum Analysis API allows users to perform time domain and frequency domain analysis. It provides functions to transform a time-domain signal into its frequency components (via Discrete Fourier Transform) and to detect threshold breaches of their amplitudes.
+
+Example: [Spectrum Analysis API](spectrum-analysis.ipynb)
 
 ## Siemens API Notice
 
