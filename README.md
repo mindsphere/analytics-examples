@@ -17,8 +17,8 @@
 The easiest way to run the notebook is to use `mindsphere/analytics-examples`
 
 ```bash
-docker pull mindsphere/analytics-examples
-docker run -it -p:18888:8888 -p:14994:4994 mindsphere/analytics-examples
+docker pull mindconnect/analytics-examples
+docker run -it -p:18888:8888 -p:14994:4994 --name examples mindconnect/analytics-examples
 ```
 
 The notebook will offer two endpoints:
@@ -28,11 +28,13 @@ The notebook will offer two endpoints:
 
 Please configure the CLI with app credentials [as described here](https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html)
 
-After that you can start using the jupyter lab with the notebooks.
+After that you can start using the jupyter lab with the notebooks. Just copy the token from the container output.
+
+(If you have started the container in the background you can get the token by running `docker logs examples` command.)
 
 ## Docker file
 
-The docker image is based on jupyter/scipy-notebook by [jupyter/docker-stacks](https://github.com/jupyter/docker-stacks)
+The docker image is based on [jupyter/scipy-notebook docker image](https://hub.docker.com/r/jupyter/scipy-notebook/).
 
 ## Siemens API Notice
 
