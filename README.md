@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # MindSphere Analytics Examples
 
 <!-- markdownlint-disable MD033 -->
@@ -11,6 +13,7 @@ Examples how to use the mindSphere analytics APIs.
 [![Forum](https://img.shields.io/badge/mindsphere-community-%23009999.svg)](https://community.plm.automation.siemens.com/t5/Developer-Space/bd-p/MindSphere-platform-forum)
 
 ## Jupyter Notebooks demonstrating the use of the MindSphere Analytics APIs
+
 
 ### Trend Prediction API
 
@@ -29,6 +32,46 @@ Example: [KPI Calculation API](kpi-calculation.ipynb)
 Spectrum Analysis API allows users to perform time domain and frequency domain analysis. It provides functions to transform a time-domain signal into its frequency components (via Discrete Fourier Transform) and to detect threshold breaches of their amplitudes.
 
 Example: [Spectrum Analysis API](spectrum-analysis.ipynb)
+
+## Running the notebook
+
+The easiest way to run the notebook is to use `mindspheredemos/analytics-examples` docker container.
+
+You can either build the container locally
+
+```bash
+docker build .
+```
+
+or you can pull the container from docker hub.
+
+```bash
+docker pull mindspheredemos/analytics-examples
+```
+
+You can run the container using following command:
+
+```bash
+docker run -it -p:8888:8888 -p:4994:4994 --name examples mindspheredemos/analytics-examples
+```
+
+The container will offer two endpoints:
+
+-   MindSphere CLI [http://localhost:4994](http://localhost:4994)
+-   Jupyter Lab [http://localhost:8888](http://localhost:8888)
+
+Please configure the CLI with app credentials [as described here](https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html)
+
+After that you can start using the jupyter lab with the notebooks. Just copy the token from the container output. The notebooks can be found in `work` folder.
+
+![jupyter lab](images/notebook.png)
+
+(If you have started the container in the background you can get the token by running `docker logs examples` command.)
+
+## Docker Base Image
+
+The docker image is based on [jupyter/scipy-notebook docker image](https://hub.docker.com/r/jupyter/scipy-notebook/).
+
 
 ## Siemens API Notice
 
