@@ -2,15 +2,36 @@
 
 # MindSphere Analytics Examples
 
+<!-- markdownlint-disable MD033 -->
+<img src="images/analytics-examples.svg" alt="mindconnect-nodejs" width="250px"/>
+<!-- markdownlint-enableMD033 -->
+
+Examples how to use the mindSphere analytics APIs.
+
 [![The MIT License](https://img.shields.io/badge/license-MIT-009999.svg?style=flat)](./LICENSE.md)
-[![Documentation](https://img.shields.io/badge/mindsphere-documentation-%23009999.svg)](https://opensource.mindsphere.io/docs/mindconnect-nodejs/index.html)
+[![Documentation](https://img.shields.io/badge/mindsphere-documentation-%23009999.svg)](https://opensource.mindsphere.io/docs/analytics-examples/index.html)
 [![Forum](https://img.shields.io/badge/mindsphere-community-%23009999.svg)](https://community.plm.automation.siemens.com/t5/Developer-Space/bd-p/MindSphere-platform-forum)
 
 ## Jupyter Notebooks demonstrating the use of the MindSphere Analytics APIs
 
--   [Trend Prediction API](trend-prediction.ipynb)
--   [KPI Calculation API](kpi-calculation.ipynb)
--   [Spectrum Analysis API](spectrum-analysis.ipynb)
+
+### Trend Prediction API
+
+The Trend Prediction API predicts future values for time series using linear and nonlinear regression models. It is a forecasting framework, that has many useful applications in the area of Process & Condition Monitoring.
+
+Example: [Trend Prediction API](trend-prediction.ipynb)
+
+### KPI Calculation API
+
+The KPI Calculation API computes Key Performance Indicators (KPIs) for an asset. It uses data sources such as sensors, control units and calendars.
+
+Example: [KPI Calculation API](kpi-calculation.ipynb)
+
+### Spectrum Analysis API
+
+Spectrum Analysis API allows users to perform time domain and frequency domain analysis. It provides functions to transform a time-domain signal into its frequency components (via Discrete Fourier Transform) and to detect threshold breaches of their amplitudes.
+
+Example: [Spectrum Analysis API](spectrum-analysis.ipynb)
 
 ## Running the notebook
 
@@ -50,6 +71,7 @@ After that you can start using the jupyter lab with the notebooks. Just copy the
 ## Docker Base Image
 
 The docker image is based on [jupyter/scipy-notebook docker image](https://hub.docker.com/r/jupyter/scipy-notebook/).
+
 
 ## Siemens API Notice
 
