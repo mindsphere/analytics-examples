@@ -14,7 +14,7 @@
 
 ## Running the notebook
 
-The easiest way to run the notebook is to use `mindsphere/analytics-examples` docker container.
+The easiest way to run the notebook is to use `mindspheredemos/analytics-examples` docker container.
 
 You can either build the container locally
 
@@ -25,13 +25,13 @@ docker build .
 or you can pull the container from docker hub.
 
 ```bash
-docker pull mindconnect/analytics-examples
+docker pull mindspheredemos/analytics-examples
 ```
 
 You can run the container using following command:
 
 ```bash
-docker run -it -p:8888:8888 -p:4994:4994 --name examples mindconnect/analytics-examples
+docker run -it -p:8888:8888 -p:4994:4994 --name examples mindspheredemos/analytics-examples
 ```
 
 The notebook will offer two endpoints:
