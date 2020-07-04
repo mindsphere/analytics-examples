@@ -14,25 +14,40 @@
 
 ## Running the notebook
 
-The easiest way to run the notebook is to use `mindsphere/analytics-examples`
+The easiest way to run the notebook is to use `mindsphere/analytics-examples` docker container.
+
+You can either build the container locally
+
+```bash
+docker build .
+```
+
+or you can pull the container from docker hub.
 
 ```bash
 docker pull mindconnect/analytics-examples
-docker run -it -p:18888:8888 -p:14994:4994 --name examples mindconnect/analytics-examples
+```
+
+You can run the container using following command:
+
+```bash
+docker run -it -p:8888:8888 -p:4994:4994 --name examples mindconnect/analytics-examples
 ```
 
 The notebook will offer two endpoints:
 
--   MindSphere CLI [http://localhost:14994](http://localhost:14994)
--   Jupyter Lab [http://localhost:18888](http://localhost:18888)
+-   MindSphere CLI [http://localhost:4994](http://localhost:4994)
+-   Jupyter Lab [http://localhost:8888](http://localhost:8888)
 
 Please configure the CLI with app credentials [as described here](https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html)
 
-After that you can start using the jupyter lab with the notebooks. Just copy the token from the container output.
+After that you can start using the jupyter lab with the notebooks. Just copy the token from the container output. The notebooks can be found in `work` folder.
+
+![jupyter lab](images/notebook.png)
 
 (If you have started the container in the background you can get the token by running `docker logs examples` command.)
 
-## Docker file
+## Docker Base Image
 
 The docker image is based on [jupyter/scipy-notebook docker image](https://hub.docker.com/r/jupyter/scipy-notebook/).
 
