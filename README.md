@@ -34,7 +34,7 @@ You can run the container using following command:
 docker run -it -p:8888:8888 -p:4994:4994 --name examples mindspheredemos/analytics-examples
 ```
 
-The notebook will offer two endpoints:
+The container will offer two endpoints:
 
 -   MindSphere CLI [http://localhost:4994](http://localhost:4994)
 -   Jupyter Lab [http://localhost:8888](http://localhost:8888)
