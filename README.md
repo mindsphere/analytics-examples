@@ -35,7 +35,7 @@ Example: [Spectrum Analysis API](spectrum-analysis.ipynb)
 
 ## Running the notebook
 
-The easiest way to run the notebook is to use `mindspheredemos/analytics-examples` docker container.
+The easiest way to run the notebook is to use `mindspheredemos/analytics-examples` [docker container](https://hub.docker.com/r/mindspheredemos/analytics-examples).
 
 You can either build the container locally
 
